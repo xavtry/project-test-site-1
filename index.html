@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>The Project Test Site One</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header>
+    <nav>
+      <h1>Test Site</h1>
+      <button id="theme-toggle">🌙</button>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero">
+      <h2>Welcome to a site built with<br>HTML • CSS • JS • <span class="cpp">C++</span></h2>
+      <p>Yes, real C++ runs in your browser using WebAssembly!</p>
+      <button id="run-cpp">Run C++ Fibonacci (1 million)</button>
+      <p id="result"></p>
+    </section>
+
+    <section class="features">
+      <div class="card">Fast ⚡</div>
+      <div class="card">Beautiful 🎨</div>
+      <div class="card">C++ Powered 🚀</div>
+    </section>
+  </main>
+
+  <script src="main.js"></script>
+  <script src="fibonacci.wasm.js"></script> <!-- generated from C++ -->
+</body>
+</html>
